@@ -1,0 +1,15 @@
+[package]
+name = "arkymacros_schema"
+publish = false
+version = { workspace = true }
+edition = { workspace = true }
+
+[dependencies]
+arkycore = { path = "../../core" }
+serde = { version = "1.0", features = ["derive"] }
+syn = { version = "1.0", features = ["full"] }
+quote = "1.0"
+
+[lib]
+name = "arkymacros_schema"
+proc-macro = true
